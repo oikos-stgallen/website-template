@@ -1,5 +1,5 @@
 <script>
-	export let paths = {
+	export let sections = {
 		'Path 1': '/path1',
 		'Path 2': '/path2',
 		'Path 3': '/path3'
@@ -16,8 +16,8 @@
 
 <footer class="footer footer-center p-10 bg-primary text-base-content rounded text-white">
 	<nav class="grid grid-flow-col gap-4">
-		{#each Object.keys(paths) as path}
-			<a href={paths[path]} class="link link-hover">{path}</a>
+		{#each Object.keys(sections) as path}
+			<a href={sections[path]} class="link link-hover">{path}</a>
 		{/each}
 	</nav>
 	<nav>
