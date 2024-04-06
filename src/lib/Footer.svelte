@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	export let sections = {
 		'Path 1': '/path1',
 		'Path 2': '/path2',
@@ -15,15 +16,15 @@
 </script>
 
 <footer class="footer footer-center p-10 bg-primary text-base-content rounded text-white">
-	<nav class="grid grid-flow-col gap-4">
+	<nav class="grid grid-cols-1 lg:grid-flow-col gap-4">
 		{#each Object.keys(sections) as path}
-			<a href={sections[path]} class="link link-hover">{path}</a>
+			<a href="{base}{sections[path]}" class="link link-hover">{path}</a>
 		{/each}
 	</nav>
 	<nav>
 		<div class="grid grid-flow-col gap-4">
 			{#each Object.keys(socials) as social}
-				<a href={social} class="link link-hover">
+				<a href={socials[social]} class="link link-hover">
 					{#if social == 'facebook'}
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

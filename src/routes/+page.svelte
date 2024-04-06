@@ -2,8 +2,73 @@
 	import Hero from '$lib/Hero.svelte';
 	import Section from '$lib/Section.svelte';
 	import Faq from '$lib/Faq.svelte';
+	import Timeline from '$lib/Timeline.svelte';
+
 	import group from '$img/group.webp';
 	import partner from '$img/partner.webp';
+
+	const elements = [
+		{
+			date: '1970',
+			title: "Founding of 'Studenten Committee für Umweltökonomik'",
+			description: "The 'Studenten Committee für Umweltökonomik' was founded."
+		},
+		{ date: '1971', title: 'First Conference', description: 'Our first conference was held.' },
+		{
+			date: '1987',
+			title: 'Creation of oikos Advisory Board',
+			description: 'The oikos Advisory Board was created.'
+		},
+		{
+			date: '1987',
+			title: 'First Team Picture',
+			description: "The first team picture under the new name 'oikos'."
+		},
+		{
+			date: '1989',
+			title: 'Founding of öbu',
+			description: 'The öbu was founded to help Swiss companies achieve the SDGs.'
+		},
+		{
+			date: '1989',
+			title: 'Creation of oikos Foundation',
+			description: 'The oikos Foundation was created.'
+		},
+		{
+			date: '1992',
+			title: 'Founding of IWÖ',
+			description:
+				'The IWÖ, the Institute for the Economy and Environment at the HSG, was founded. It was the first of its kind in Europe.'
+		},
+		{
+			date: '1994',
+			title: 'Founding of oikos Alumni Network',
+			description:
+				'The oikos Alumni Network was established. Many alumni are in positions of power such as in parliament and industry.'
+		},
+		{
+			date: '1997',
+			title: 'Establishment of Model WTO St. Gallen',
+			description: 'Model WTO St. Gallen was established.'
+		},
+		{
+			date: '2011',
+			title: 'Creation of the oikos Fund',
+			description: 'The oikos Fund was created.'
+		},
+		{
+			date: '2007-2015',
+			title: 'Creation of Student Impact and CO2 Taskforce',
+			description:
+				'The climate strategy of the HSG was established, including the creation of the CO2 Taskforce.'
+		},
+		{
+			date: '2016-2020',
+			title: 'Spin-off of Model WTO International and oikos International',
+			description: 'Model WTO International and oikos International were spun off.'
+		},
+		{ date: '', title: 'Story Continues', description: 'And the story continues...' }
+	];
 
 	const questions = {
 		'Is it possible to apply as an assessment or master student?':
@@ -48,20 +113,20 @@
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-20">
 		<div class="flex-1">
-			<h2 class="text-5xl font-bold text-center">13</h2>
-			<p class="text-center">Different Projects</p>
+			<h2 class="text-5xl font-bold text-center text-accent">13</h2>
+			<p class="text-center text-accent">Different Projects</p>
 		</div>
 		<div class="flex-1">
-			<h2 class="text-5xl font-bold text-center">50</h2>
-			<p class="text-center">Community Members</p>
+			<h2 class="text-5xl font-bold text-center text-accent">50</h2>
+			<p class="text-center text-accent">Community Members</p>
 		</div>
 		<div class="flex-1">
-			<h2 class="text-5xl font-bold text-center">100</h2>
-			<p class="text-center">Events on Sustainable Topics</p>
+			<h2 class="text-5xl font-bold text-center text-accent">100</h2>
+			<p class="text-center text-accent">Events on Sustainable Topics</p>
 		</div>
 		<div class="flex-1">
-			<h2 class="text-5xl font-bold text-center">50</h2>
-			<p class="text-center">Global Networks</p>
+			<h2 class="text-5xl font-bold text-center text-accent">50</h2>
+			<p class="text-center text-accent">Global Networks</p>
 		</div>
 	</div>
 </Section>
@@ -83,5 +148,7 @@
 		</div>
 	</div>
 </Section>
+
+<Timeline {elements} />
 
 <Faq title="QUESTIONS & ANSWERS" {questions} />

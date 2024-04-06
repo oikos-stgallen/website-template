@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import logo from '$img/logo.webp';
 	export let sections = {
 		'Path 1': '/path1',
@@ -15,7 +16,7 @@
 		<div class="w-full navbar bg-base-300 flex justify-center items-center">
 			<div class="max-w-5xl w-full flex justify-between items-center h-14 lg:h-28">
 				<div class="flex lg:flex-1">
-					<a class="text-lg w-12 h-12 lg:w-24 lg:h-24" href="/">
+					<a class="text-lg w-12 h-12 lg:w-24 lg:h-24" href={base}>
 						<img alt="Logo" src={logo} />
 					</a>
 				</div>
@@ -23,7 +24,7 @@
 					<ul class="menu menu-horizontal justify-center">
 						{#each Object.keys(sections) as section}
 							<li>
-								<a class="font-bold uppercase" href={sections[section]}>{section}</a>
+								<a class="font-bold uppercase" href="{base}{sections[section]}">{section}</a>
 							</li>
 						{/each}
 					</ul>
@@ -63,7 +64,7 @@
 			<!-- Sidebar content here -->
 			<div class="flex justify-between p-2">
 				<!-- Logo -->
-				<a class="btn btn-ghost text-lg" href="/">
+				<a class="btn btn-ghost text-lg" href={base}>
 					<img alt="Logo" src={logo} class="w-8" />
 				</a>
 			</div>
@@ -71,7 +72,7 @@
 			<div class="flex flex-col pt-4">
 				{#each Object.keys(sections) as section}
 					<li>
-						<a href={sections[section]}>{section}</a>
+						<a href="{base}{sections[section]}">{section}</a>
 					</li>
 				{/each}
 			</div>
