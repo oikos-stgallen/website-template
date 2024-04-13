@@ -5,11 +5,10 @@
 
 	const sections = {
 		About: '/',
+		Team: '/team',
 		'Join Us': '/',
 		Projects: '/projects',
 		Events: '/',
-		Blog: '/',
-		Community: '/',
 		Contact: '/'
 	};
 </script>

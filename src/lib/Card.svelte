@@ -14,7 +14,7 @@
 	on:mouseenter={() => (show_details = true)}
 	on:mouseleave={() => (show_details = false)}
 >
-	<div class="bg-center w-full h-72" style="background-image: url({image});"></div>
+	<div class="bg-center w-full h-72 bg-cover" style="background-image: url({image});"></div>
 
 	{#if show_details}
 		<div

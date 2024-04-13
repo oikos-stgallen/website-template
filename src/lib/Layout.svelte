@@ -1,11 +1,7 @@
 <script>
 	import { base } from '$app/paths';
 	import logo from '$img/logo.webp';
-	export let sections = {
-		'Path 1': '/path1',
-		'Path 2': '/path2',
-		'Path 3': '/path3'
-	};
+	export let sections = {};
 </script>
 
 <div class="drawer">
