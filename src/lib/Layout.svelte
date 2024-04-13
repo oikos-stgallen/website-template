@@ -68,7 +68,12 @@
 			<div class="flex flex-col pt-4">
 				{#each Object.keys(sections) as section}
 					<li>
-						<a href="{base}{sections[section]}">{section}</a>
+						<a
+							on:click={() => {
+								document.getElementById('my-drawer-3').click();
+							}}
+							href="{base}{sections[section]}">{section}</a
+						>
 					</li>
 				{/each}
 			</div>

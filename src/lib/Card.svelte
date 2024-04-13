@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="flex flex-col bg-base-200 max-w-sm relative"
+	class="flex flex-col bg-base-200 max-w-sm relative w-full m-auto"
 	on:click={() => (show_details = true)}
 	on:mouseenter={() => (show_details = true)}
 	on:mouseleave={() => (show_details = false)}
