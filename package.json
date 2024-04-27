@@ -24,8 +24,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@google-cloud/local-auth": "^2.1.0",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"google-auth-library": "^9.9.0",
-		"google-spreadsheet": "^4.1.1"
+		"google-spreadsheet": "^4.1.1",
+		"googleapis": "^105.0.0"
 	}
 }

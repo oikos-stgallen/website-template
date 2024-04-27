@@ -3,16 +3,24 @@
 
 	let show_details = false;
 
+	export let url;
 	export let image;
 	export let title;
 	export let subtitle;
 </script>
 
-<div
+<a
 	class="flex flex-col bg-base-200 max-w-sm relative w-full m-auto"
 	on:click={() => (show_details = true)}
 	on:mouseenter={() => (show_details = true)}
 	on:mouseleave={() => (show_details = false)}
+	on:keydown={(event) => {
+		if (event.key === 'Enter' || event.key === ' ') {
+			show_details = true;
+		}
+	}}
+	href={url}
+	target="_blank"
 >
 	<div class="bg-center w-full h-72 bg-cover" style="background-image: url({image});"></div>
 
@@ -26,4 +34,4 @@
 			<button class="btn btn-sm btn-primary">Lean More</button>
 		</div>
 	{/if}
-</div>
+</a>
