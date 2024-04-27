@@ -2,7 +2,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 import { SECRET_SHEETS_EMAIL, SECRET_SHEETS_PRIVATE_KEY, SECRET_SHEET_ID } from '$env/static/private'
 
-
+// Connect to google sheets API
 const serviceAccountAuth = new JWT({
     email: SECRET_SHEETS_EMAIL,
     key: SECRET_SHEETS_PRIVATE_KEY,
@@ -10,8 +10,8 @@ const serviceAccountAuth = new JWT({
         'https://www.googleapis.com/auth/spreadsheets',
     ],
 });
-
 const doc = new GoogleSpreadsheet(SECRET_SHEET_ID, serviceAccountAuth);
+
 export async function load({ fetch }) {
 
     await doc.loadInfo();
