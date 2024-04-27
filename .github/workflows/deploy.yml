@@ -23,6 +23,10 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          SECRET_SHEETS_EMAIL: '${{ secrets.SECRET_SHEETS_EMAIL }}'
+          SECRET_SHEETS_PRIVATE_KEY: '${{ secrets.SECRET_SHEETS_PRIVATE_KEY }}'
+          SECRET_SHEET_ID: '${{ secrets.SECRET_SHEET_ID }}'
+
         run: |
           npm run build
 
