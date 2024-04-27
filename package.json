@@ -24,6 +24,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^3.0.1"
+		"@sveltejs/adapter-static": "^3.0.1",
+		"google-auth-library": "^9.9.0",
+		"google-spreadsheet": "^4.1.1"
 	}
 }

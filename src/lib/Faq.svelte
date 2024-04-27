@@ -1,11 +1,7 @@
 <script>
 	import Section from './Section.svelte';
 	export let title = 'Title';
-	export let questions = {
-		'Question 1': 'Answer 1',
-		'Question 2': 'Answer 2',
-		'Question 3': 'Answer 3'
-	};
+	export let questions = {};
 </script>
 
 <Section>

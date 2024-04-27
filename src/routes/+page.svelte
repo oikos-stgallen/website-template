@@ -84,6 +84,8 @@
 		'Will I earn campus credits?':
 			'Due to the varying workload, it is project heads (4 ECTS) and board members (6 or 8 ECTS) who receive campus credits.'
 	};
+
+	export let data;
 </script>
 
 <Hero
@@ -151,4 +153,4 @@
 
 <Timeline {elements} />
 
-<Faq title="QUESTIONS & ANSWERS" {questions} />
+<Faq title="QUESTIONS & ANSWERS" questions={data} />
