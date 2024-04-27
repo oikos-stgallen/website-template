@@ -1,8 +1,5 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
-import { env } from '$env/static/private';
-console.log(env);
-
 import { SECRET_SHEETS_EMAIL, SECRET_SHEETS_PRIVATE_KEY, SECRET_SHEET_ID } from '$env/static/private'
 
 // Connect to google sheets API
