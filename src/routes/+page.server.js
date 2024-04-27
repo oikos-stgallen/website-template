@@ -5,7 +5,7 @@ import { SECRET_SHEETS_EMAIL, SECRET_SHEETS_PRIVATE_KEY, SECRET_SHEET_ID } from 
 // Connect to google sheets API
 const serviceAccountAuth = new JWT({
     email: SECRET_SHEETS_EMAIL,
-    key: SECRET_SHEETS_PRIVATE_KEY,
+    key: SECRET_SHEETS_PRIVATE_KEY.split(String.raw`\n`).join('\n'),
     scopes: [
         'https://www.googleapis.com/auth/spreadsheets',
     ],
