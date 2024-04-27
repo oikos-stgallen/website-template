@@ -6,7 +6,7 @@
 	const sections = {
 		About: '/',
 		Team: '/team',
-		'Join Us': '/',
+		'Join Us': '/join',
 		Projects: '/projects',
 		Events: '/',
 		Contact: '/'
