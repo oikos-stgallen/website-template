@@ -8,7 +8,7 @@
 		Team: '/team',
 		'Join Us': '/join',
 		Projects: '/projects',
-		Events: '/',
+		Events: '/events',
 		Contact: '/contact'
 	};
 </script>
