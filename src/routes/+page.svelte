@@ -1,7 +1,6 @@
 <script>
 	import Hero from '$lib/Hero.svelte';
 	import Section from '$lib/Section.svelte';
-	import Faq from '$lib/Faq.svelte';
 	import Timeline from '$lib/Timeline.svelte';
 
 	import group from '$img/group.webp';
@@ -137,5 +136,3 @@
 </Section>
 
 <Timeline {elements} />
-
-<Faq title="QUESTIONS & ANSWERS" questions={data} />

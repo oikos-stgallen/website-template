@@ -1,4 +1,5 @@
 <script>
+	import Faq from '$lib/Faq.svelte';
 	import Hero from '$lib/Hero.svelte';
 	import Section from '$lib/Section.svelte';
 
@@ -6,6 +7,9 @@
 	import interview from '$img/interview.webp';
 	import curriculum from '$img/curriculum.webp';
 	import logo from '$img/logo.webp';
+
+	export let data;
+	const questions = data.questions;
 </script>
 
 <Hero image={group} title="Join Us" subtitle="Choose the project for you!" />
@@ -122,4 +126,8 @@
 
 <Section>
 	<h1 class="text-center text-3xl lg:text-5xl font-bold mb-10">OPEN POSITIONS</h1>
+</Section>
+
+<Section>
+	<Faq title="QUESTIONS & ANSWERS" {questions} />
 </Section>
