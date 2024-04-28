@@ -9,7 +9,7 @@
 		'Join Us': '/join',
 		Projects: '/projects',
 		Events: '/',
-		Contact: '/'
+		Contact: '/contact'
 	};
 </script>
 
