@@ -16,23 +16,19 @@
 <Section>
 	<h1 class="text-center text-lg lg:text-3xl font-bold mb-4">You can contact us through</h1>
 
-	<div class="flex flex-col items-center lg:flex-row gap-20">
-		<div class="flex-1">
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-				<Member />
-				<Member />
-				<Member />
-				<Member />
-				<Member />
-				<Member />
-			</div>
-		</div>
-		<div class="flex-1">
-			<Contact />
-		</div>
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+		<Member />
+		<Member />
+		<Member />
+		<Member />
+		<Member />
+		<Member />
 	</div>
 </Section>
 
 <Section>
-	<h1 class="text-center text-lg lg:text-3xl font-bold mb-4">Visit us</h1>
+	<h1 class="text-center text-lg lg:text-3xl font-bold mb-4">Contact us</h1>
+	<div class="flex justify-center">
+		<Contact />
+	</div>
 </Section>
